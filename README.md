@@ -58,3 +58,71 @@ PORT=5000
 ```bash
 node server.js
 ```
+
+# 🗄️ Configuración AWS RDS
+
+# 📊 Estructura de la Base de Datos
+
+```bash
+Table: users
+├── id (SERIAL PK)
+├── username (VARCHAR 50, UNIQUE)
+├── email (VARCHAR 100, UNIQUE)
+├── password (VARCHAR 255) -- bcrypt hash
+├── role (VARCHAR 20) -- 'user' | 'admin'
+├── created_at (TIMESTAMP)
+└── updated_at (TIMESTAMP)
+```
+
+## 📚 Ejecutar script SQL
+
+```bash
+Test-conexion-AWS->database->init.sql
+```
+
+## 🔑 Credenciales de Prueba
+
+```bash
+| Rol     | Email            | Password   |
+| ------- | ---------------- | ---------- |
+| Admin   | `admin@demo.com` | `admin123` |
+| Usuario | `user@demo.com`  | `user123`  |
+```
+
+# 🔧 API Endpoints
+
+```bash
+| Método | Endpoint             | Descripción          | Auth        |
+| ------ | -------------------- | -------------------- | ----------- |
+| POST   | `/api/auth/register` | Registrar usuario    | Público     |
+| POST   | `/api/auth/login`    | Iniciar sesión       | Público     |
+| GET    | `/api/auth/profile`  | Perfil del usuario   | JWT         |
+| GET    | `/api/auth/users`    | Listar todos (admin) | JWT + Admin |
+| GET    | `/api/health`        | Health check         | Público     |
+```
+
+# 🛠️ Tecnologías
+
+Backend
+Node.js + Express
+PostgreSQL (pg)
+JWT (jsonwebtoken)
+bcryptjs (hashing)
+cors + dotenv
+Frontend
+React 18
+Vite (build tool)
+React Router DOM
+Tailwind CSS v4
+Axios (HTTP client)
+Database
+PostgreSQL 15+
+AWS RDS (hosting)
+
+# 🔒 Seguridad
+✅ Contraseñas hasheadas con bcrypt (10 rounds)
+✅ Autenticación JWT con expiración (24h)
+✅ Middleware de autorización por roles
+✅ Validación de datos en backend
+✅ CORS configurado
+✅ SSL para conexiones AWS RDS
