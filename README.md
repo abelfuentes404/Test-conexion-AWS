@@ -54,6 +54,7 @@ JWT_SECRET=tu_clave_secreta_jwt
 PORT=5000
 ```
 
+# Iniciar servidor
 ```bash
 node server.js
 ```
