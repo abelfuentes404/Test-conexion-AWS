@@ -134,3 +134,10 @@ AWS RDS (hosting)
 ✅ Validación de datos en backend
 ✅ CORS configurado
 ✅ SSL para conexiones AWS RDS
+
+
+# 🙋♂️ Autor
+Abel Fuentes Guzman
+GitHub: @abelfuentes404
+YouTube: 
+LinkedIn: 
