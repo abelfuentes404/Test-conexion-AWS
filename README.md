@@ -41,7 +41,19 @@ cp .env.example .env
 ```
 # Editar .env con tus credenciales de AWS RDS
 
+# Variables de entorno (.env):
 
 ```bash
-npm run dev
+DB_HOST=tu-endpoint.amazonaws.com
+DB_PORT=5432
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASSWORD=tu-password-seguro
+
+JWT_SECRET=tu_clave_secreta_jwt
+PORT=5000
+```
+
+```bash
+node server.js
 ```
