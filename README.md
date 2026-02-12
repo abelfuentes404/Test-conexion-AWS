@@ -24,8 +24,8 @@ Proyecto de demostración completo para video tutorial sobre cómo conectar una 
 ### 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/aws-rds-demo.git
-cd aws-rds-demo
+git clone https://github.com/abelfuentes404/Test-conexion-AWS.git
+cd Test-conexion-AWS
 ```
 
 ### 2. Backend
