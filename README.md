@@ -16,3 +16,29 @@ Proyecto de demostración completo para video tutorial sobre cómo conectar una 
 - **Features**: Registro, login, roles (admin/user), dashboard protegido
 
 ## 🏗️ Arquitectura
+
+
+
+## 🚀 Instalación Rápida
+
+### 1. Clonar repositorio
+
+```bash
+git clone https://github.com/tu-usuario/aws-rds-demo.git
+cd aws-rds-demo
+
+
+### 2. Backend
+
+```bash
+cd server
+npm install
+
+# Configurar variables de entorno
+
+```bash
+cp .env.example .env
+# Editar .env con tus credenciales de AWS RDS
+
+```bash
+npm run dev
