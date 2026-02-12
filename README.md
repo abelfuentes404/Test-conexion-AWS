@@ -41,7 +41,7 @@ cp .env.example .env
 ```
 # Editar .env con tus credenciales de AWS RDS
 
-# Variables de entorno (.env):
+### Variables de entorno (.env):
 
 ```bash
 DB_HOST=tu-endpoint.amazonaws.com
