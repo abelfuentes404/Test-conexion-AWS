@@ -66,7 +66,7 @@ node server.js
 Aqui el video tutorial de como configurar la base de datos en AWS RDS y conectarla con Node.js y React:
 "Cómo conectar PostgreSQL en AWS RDS con Node.js y React"
 
-https://youtube.com/
+https://www.youtube.com/watch?v=XeSh52r-29g
 
 
 # 📊 Estructura de la Base de Datos
